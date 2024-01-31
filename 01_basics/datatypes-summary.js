@@ -1,9 +1,13 @@
-//  Primitive
+//  Primitive - It is called by value which means the copy of actual data is passed
 
-//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+//  7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
 const score = 100
 const scoreValue = 100.3
+
+// JavaScript is a dynamically typed language, which means that data types of 
+// variables are determined by the value they hold at runtime and can change throughout the 
+// program as we assign different values to them.
 
 const isLoggedIn = false
 const outsideTemp = null
@@ -24,7 +28,7 @@ console.log(id === anotherId);
 
 const heros = ["shaktiman", "naagraj", "doga"];
 let myObj = {
-    name: "hitesh",
+    name: "ayush",
     age: 22,
 }
 
@@ -35,3 +39,33 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Memory type
+// Stack (Primitive), Heap (Non-primitive)
+
+// ***************Primitive*****************
+let myYoutubename = "ayushpratapdot.com"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername)
+
+
+//*************Non-Primitive**************
+// call by reference
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "ayush@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
