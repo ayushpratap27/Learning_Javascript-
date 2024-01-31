@@ -46,22 +46,23 @@ let str2 = " hitesh"
 let str3 = str1 + str2
 // console.log(str3);
 
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+// console.log("1" + 2);    // o/p => 12  Taken as string
+// console.log(1 + "2");    // o/p => 12  Taken as string
+// console.log("1" + 2 + 2);    // o/p => 122   Taken as string
+// console.log(1 + 2 + "2");    // o/p => 32    First as number then as string
 
 // console.log( (3 + 4) * 5 % 3);
 
-// console.log(+true);
-// console.log(+"");
+// console.log(true);   //  o/p => true
+// console.log(+true);  //  o/p => 1
+// console.log(+"");    //  o/p => 0
 
 let num1, num2, num3
 
 num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100
-++gameCounter;
+++gameCounter;    // use prefix and postfix operators documentation on mdn
 console.log(gameCounter);
 
 // link to study
