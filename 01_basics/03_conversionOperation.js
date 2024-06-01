@@ -54,8 +54,8 @@ let str3 = str1 + str2
 // console.log( (3 + 4) * 5 % 3);
 
 // console.log(true);   //  o/p => true
-// console.log(+true);  //  o/p => 1
-// console.log(+"");    //  o/p => 0
+// console.log(+true);  //  o/p => 1  // Not recommended to do this
+// console.log(+"");    //  o/p => 0  // Not recommended to do this
 
 let num1, num2, num3
 
