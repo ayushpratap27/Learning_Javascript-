@@ -1,12 +1,12 @@
 // Dates
 
 let myDate = new Date()
-// console.log(myDate.toString());
-// console.log(myDate.toDateString());
-// console.log(myDate.toISOString());
-// console.log(myDate.toJSON());
-// console.log(myDate.toLocaleDateString());
-// console.log(myDate.toLocaleString());
+// console.log(myDate.toString()); // o/p=> Sun Jun 02 2024 09:03:28 GMT+0530 (India Standard Time)
+// console.log(myDate.toDateString()); // Sun Jun 02 2024
+// console.log(myDate.toISOString()); // 2024-06-02T03:35:01.383Z
+// console.log(myDate.toJSON()); // 2024-06-02T03:35:35.171Z
+// console.log(myDate.toLocaleDateString()); // 6/2/2024
+// console.log(myDate.toLocaleString()); // 6/2/2024, 9:06:35 AM
 // console.log(typeof myDate);   // o/p => object
 
 // let myCreatedDate = new Date(2023, 0, 23)
