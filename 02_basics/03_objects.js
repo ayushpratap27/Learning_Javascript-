@@ -1,7 +1,10 @@
-// singleton
+// Objects are created in two ways -> literals and constructor
+
+// singleton - When we create object using constructor it become singleton 
 // Object.create
 
-// Objects are created in two ways -> literals and constructor
+// When we create object using literals it is not singleton
+
 
 // object literals
 
@@ -20,11 +23,11 @@ const JsUser = {
 }
 
 // console.log(JsUser.email)
-// console.log(JsUser["email"])
+// console.log(JsUser["email"]) // More preferable way to access
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
 
-JsUser.email = "ayush@chatgpt.com"
+JsUser.email = "ayush@chatgpt.com" // For overwriting values
 // Object.freeze(JsUser)
 JsUser.email = "ayush@microsoft.com"
 // console.log(JsUser);
