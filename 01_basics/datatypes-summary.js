@@ -16,7 +16,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+console.log(id === anotherId);  // o/p => false, as symbols are unique
 
 // const bigNumber = 3456543576654356754n
 
@@ -52,8 +52,8 @@ let myYoutubename = "ayushpratapdot.com"
 let anothername = myYoutubename
 anothername = "chaiaurcode"
 
-console.log(myYoutubename);
-console.log(anothername)
+console.log(myYoutubename); // o/p => ayushpratapdot.com because copy is passed 
+console.log(anothername)    // o/p => chaiaurcode
 
 
 //*************Non-Primitive**************
@@ -67,5 +67,5 @@ let userOne = {
 let userTwo = userOne
 userTwo.email = "ayush@google.com"
 
-console.log(userOne.email)
-console.log(userTwo.email)
+console.log(userOne.email)  // o/p => ayush@google.com
+console.log(userTwo.email)  // o/p => ayush@google.com because reference is passed
