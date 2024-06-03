@@ -3,7 +3,7 @@ const user = {
     price: 999,
 
     welcomeMessage: function() {
-        console.log(`${this.username} , welcome to website`);   // (this) is user to refer current context
+        console.log(`${this.username} , welcome to website`);   // (this) is used to refer current context
         console.log(this);
     }
 
@@ -13,12 +13,13 @@ const user = {
 // user.username = "sam"
 // user.welcomeMessage()
 
-// console.log(this); // Current context - {} empty
+// console.log(this); // Current context - {} empty becuase this is in node environment
+// In browser the global object is window
 
 // function chai(){
 //     let username = "Ayush"
 //     console.log(this.username);  // O/p => undefined
-// }
+// } // this is not used in function in this way
 
 // chai()
 
@@ -27,11 +28,12 @@ const user = {
 //     console.log(this.username); // o/p => undefined
 // }
 
+
+// Arrow function
 const chai =  () => {
     let username = "Ayush"
     console.log(this);
 }
-
 
 // chai()
 
@@ -43,7 +45,7 @@ const chai =  () => {
 
 // const addTwo = (num1, num2) => ( num1 + num2 )
 
-const addTwo = (num1, num2) => ({username: "Ayush"})
+const addTwo = (num1, num2) => ({username: "Ayush"}) // This syntax is used for returning objects
 
 
 console.log(addTwo(3, 4))
