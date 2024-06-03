@@ -7,7 +7,8 @@ function sayMyName(){
     console.log("H");
 }
 
-// sayMyName()
+// sayMyName // - Reference of function
+// sayMyName() // - Execution of function
 
 // function addTwoNumbers(number1, number2){ // Jab function ki definition banate hain to
                                             // usme parameters pass krte hain
@@ -35,7 +36,7 @@ const result = addTwoNumbers(3, 5)  // Jab function ko call krte hain tb usme ar
 // console.log("Result: ", result);
 
 
-function loginUserMessage(username = "sam"){
+function loginUserMessage(username = "sam"){ // default value
     if(!username){  // !username is equal to username === undefined
         console.log("PLease enter a username");
         return
@@ -47,7 +48,7 @@ function loginUserMessage(username = "sam"){
 // to execute it
 // console.log(loginUserMessage("Ayush"))
 
-
+// Rest operator -> ...
 function calculateCartPrice(val1, val2, ...num1){
     return num1
 }
