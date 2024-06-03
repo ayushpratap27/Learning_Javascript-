@@ -7,13 +7,14 @@ if (true) {
     
 }
 
-
+// Global scope in browser using console is different from that using node in windows
 
 // console.log(a);
 // console.log(b);
 // console.log(c);
 
 
+// Child function can access variables of parent function but vice versa is not possible
 function one(){
     const username = "Ayush"
 
@@ -23,7 +24,7 @@ function one(){
     }
     // console.log(website);
 
-     two()
+    two()
 
 }
 
@@ -53,6 +54,6 @@ function addone(num){
 
 
 addTwo(5)  // This is going to give error, this syntax of function declaration doesn't allow to access before initialization
-const addTwo = function(num){
+const addTwo = function(num){ // Sometimes this declaration of function is known as expression
     return num + 2
 }
