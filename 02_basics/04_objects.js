@@ -30,6 +30,7 @@ const obj3 = {...obj1, ...obj2}
 // console.log(obj3);
 
 
+// Array of objects
 const users = [
     {
         id: 1,
@@ -48,9 +49,9 @@ const users = [
 users[1].email
 // console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
+// console.log(Object.keys(tinderUser)); // Returns an array of keys
 // console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));// Returns array of array and each subarray contains key-value pair
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));    // To check whether property exists or not
 
